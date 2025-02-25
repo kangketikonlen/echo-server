@@ -1,0 +1,13 @@
+services:
+  laravel-echo-server:
+    build: .
+    container_name: laravel-echo-server
+    ports:
+      - "6001:6001"
+    networks:
+      - external
+    env_file: .env
+networks:
+  external:
+    name: server
+    external: true

@@ -1,0 +1,24 @@
+{
+    "authHost": "LARAVEL_ECHO_SERVER_AUTH_HOST",
+    "authEndpoint": "/broadcasting/auth",
+    "clients": [
+        {
+            "appId": "LARAVEL_ECHO_SERVER_CLIENT_ID",
+            "key": "LARAVEL_ECHO_SERVER_CLIENT_KEY"
+        }
+    ],
+    "database": "redis",
+    "databaseConfig": {
+        "redis": {
+            "host": "LARAVEL_ECHO_SERVER_REDIS_HOST",
+            "port": "LARAVEL_ECHO_SERVER_REDIS_PORT"
+        }
+    },
+    "devMode": "LARAVEL_ECHO_SERVER_DEBUG",
+    "port": "LARAVEL_ECHO_SERVER_PORT",
+    "secureOptions": 67108864,
+    "subscribers": {
+        "http": true,
+        "redis": true
+    }
+}
